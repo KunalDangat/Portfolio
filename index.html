@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoilio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="kunal.css">
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="section">
+            <!-- <div class="navbar">
+                <h1>Porfoilio</h1>
+            </div> -->
+            <div>
+                <h1><span>Hi I'm</span><br> Kunal <br></h1>
+                <img src="Doc_-_Fan_Character_-_Improvement___Nina_Kunze-transformed.png" alt="">
+                <button class="button-63"><a href="#Hire-Me">Hire Me</a></button>
+                <hr />
+            </div>
+            <div id="box">
+                <div>
+                    <h2>Bachelor in Computer Science</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2><br>
+            <img class="one" src="html.png" alt="">
+            <img class="two" src="Icono - CSS.png" alt=""><br>
+            <img class="three" src="Java programming language icon.png" alt="">
+            <img class="four" src="Best reads_ Python programming — The MagPi magazine.png" alt="">
+        </div>
+
+        <div class="section">
+            <div id="contact">
+                <div class="container">
+                    <h2><b>Contact</b></h2><br>
+                    <h3>+917276809595</h3><br>
+                    <h4>kunaldangat.ksd @gmail.com</h4>
+                    <button class="button-63" role="button"><a href="#Hire-Me">Hire Me</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <h1>1.&nbsp;E-Commerce Website - <a href="https://kunaldangat.github.io/Project/">https://kunaldangat.github.io/Project/</a></h1>
+            <h3>2.&nbsp;Portfoilio Website - <a href="https://kunaldangat.github.io/Portfolio/">https://kunaldangat.github.io/Portfolio/</a></h3>
+            <h4>Currently I'm Learning Flutter & Figma </h4>
+        </div>
+
+        <div id="Hire-Me" class="section">
+            <img src="boy-transformed.png" alt="">
+            <div class="contact-me">
+                <form method="post" onsubmit="sendEmail(); reset(); return false;">
+                    <h3>CONTACT ME</h3>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Email id" required>
+                    <input type="text" id="phone" placeholder="Phone no." required>
+                    <textarea id="message" rows="4" placeholder="What do you me to do?"></textarea>
+                    <button type="submit"><a href="https://share.hsforms.com/19q0YLQ_QQGKlguaPbrbSMwpxn8p">Hire Me</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "69e3b1e1-3585-4be7-9b79-cc8d73738687",
+                // Host: "smtp.elasticemail.com",
+                // Username: "kunaldangat.ksd@gmail.com",
+                // Password: "kunal9595",
+                To: 'kunal.dangat9595@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Hi",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone No: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
+</body>
+
+</html>
