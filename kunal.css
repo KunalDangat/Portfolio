@@ -357,6 +357,15 @@ form button {
 }
 
 @media (50px <= width <=475px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
     .section:nth-child(1) img {
         position: absolute;
         top: -8%;
@@ -495,6 +504,15 @@ form button {
 }
 
 @media (476px <= width <=1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
     .section:nth-child(1) img {
         position: absolute;
         top: -8%;
